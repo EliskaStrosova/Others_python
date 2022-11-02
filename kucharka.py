@@ -34,7 +34,6 @@
 # prida do atributu recepty objekt recepty ktery je v argumentu recept
 
 
-
 class Recept:
     def __init__(self, nazev, narocnost, url_adresa):
         self.nazev = nazev

@@ -27,6 +27,7 @@
 
 users_phone_num= input("Telefonní číslo:")
 
+
 def check_input(number):
     if len(users_phone_num) == 9:
         return True
