@@ -44,7 +44,7 @@ class Recept:
     def __str__(self):
         pass
 
-
+#definice metod? 
 
 class Kucharka:
     pass
