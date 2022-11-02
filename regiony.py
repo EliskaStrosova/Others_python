@@ -506,11 +506,21 @@ staty = [
 
 user = input("What region are you interested in? ")
 
+check_nan = []
+# for regions in staty:
+#     if regions["region"] == user:
+#         print(regions["name"]) #filtrování výrazů 
+#     elif regions["region"] != user :
+#         print("Neznámý region")
+
 for regions in staty:
     if regions["region"] == user:
-        print(regions["name"]) #filtrování výrazů 
-    elif regions["region"] != user :
-        print("Neznámý region") 
+        print(regions["name"])
+        check_nan.append(regions["name"])
+    #elif regions["region"] != user:
+     #   print("Neznámý region")
+if len(check_nan) == 0:
+    print("Neznámý region")
 
 
 # Pokud program žádný stát pro daný region nenajde, vypiš jeden text "Neznámý region".
